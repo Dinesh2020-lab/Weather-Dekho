@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+const apiKey = '1d38882a9661bc19d92cb17d74cab11f';
 
 async function getWeather(city) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;
@@ -30,4 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
             result.textContent = err.message;
         }
     });
+
 });
